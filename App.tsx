@@ -37,5 +37,20 @@ export default function App(): JSX.Element {
 }
 
 const styles = StyleSheet.create({
-
-})
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  actionBtn: {
+    borderRadius: 12,
+    backgroundColor: '#6A1B4D',
+    paddingVertical: 10,
+    paddingHorizontal: 40,
+  },
+  actionBtnTxt: {
+    fontSize: 24,
+    color: "#FFFFFF",
+    textTransform: 'uppercase'
+  }
+});
