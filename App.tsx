@@ -16,11 +16,16 @@ export default function App(): JSX.Element {
   const generateColor = () => {
     const hexRange = "0123456789ABCDEF"
     let color = '#'
+
+    for(let i = 0; i < 6; i++) {
+      color += hexRange[Math.floor(Math.random() * 16)]
+    }
+    setRandomBackground(color)
   }
   return (
     <>
     <StatusBar backgroundColor={randomBackground} />
-    <View>
+    <View >
     </View>
     </>
   )
