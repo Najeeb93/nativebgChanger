@@ -1,18 +1,21 @@
 import React from 'react';
 import {
+  Pressable,
   SafeAreaView,
   ScrollView,
   StatusBar,
   StyleSheet,
   Text,
-  useColorScheme,
+  TouchableOpacity,
   View,
 } from 'react-native';
 
-export default function App() {
+export default function App(): JSX.Element {
   return (
+    <>
+    <StatusBar />
     <View>
-      <Text style={{fontSize: 50}}>Hello World</Text>
     </View>
+    </>
   )
 }
