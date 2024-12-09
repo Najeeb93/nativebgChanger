@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Pressable,
   SafeAreaView,
@@ -11,11 +11,16 @@ import {
 } from 'react-native';
 
 export default function App(): JSX.Element {
+  const [randomBackground, setRandomBackground] = useState('#ffffff')
   return (
     <>
-    <StatusBar />
+    <StatusBar backgroundColor={randomBackground} />
     <View>
     </View>
     </>
   )
 }
+
+const styles = StyleSheet.create({
+
+})
