@@ -25,7 +25,12 @@ export default function App(): JSX.Element {
   return (
     <>
     <StatusBar backgroundColor={randomBackground} />
-    <View >
+    <View style={[styles.container, {backgroundColor: randomBackground} ]}>
+      <TouchableOpacity onPress={generateColor}>
+        <View style={styles.actionBtn}>
+          <Text style={styles.actionBtnTxt}>Press me</Text>
+        </View>
+      </TouchableOpacity>
     </View>
     </>
   )
